@@ -1,6 +1,6 @@
 const express=require("express")
 const router=express.Router()
-const product=require("../model/productmodel")
+const product=require("../model/productModel")
 const {getController,specificGetController,postController,putController,deleteController}=require("../controller/productController")
 
 router 

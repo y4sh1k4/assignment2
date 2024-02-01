@@ -3,7 +3,7 @@ const app=express();
 const dotenv=require("dotenv")
 const productRouter=require("./Router/productRouter")
 const mongoose=require('mongoose')
-const product=require("./model/productmodel")
+const product=require("./model/productModel")
 dotenv.config();
 main()
 .then("db connected")
@@ -17,6 +17,7 @@ async function main() {
 
 app.use(express.urlencoded({extended:true}))
 app.use("/product",productRouter)
+app.use("/user",userRouter)
 app.post("/",async(req,res)=>{
   const {id,name,price}=req.body;
   const pdata=new product({
