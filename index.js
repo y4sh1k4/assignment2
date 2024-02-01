@@ -4,6 +4,8 @@ const dotenv=require("dotenv")
 const productRouter=require("./Router/productRouter")
 const mongoose=require('mongoose')
 const product=require("./model/productmodel")
+const userRouter=require("./Router/userRouter")
+
 dotenv.config();
 main()
 .then("db connected")
