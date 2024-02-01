@@ -1,4 +1,4 @@
-const product=require("../model/productModel")
+const product=require("../model/productmodel")
 const getController=async(req,res)=>{
     const findProduct= await product.find({})
     res.json(findProduct)

@@ -3,7 +3,7 @@ const app=express();
 const dotenv=require("dotenv")
 const productRouter=require("./Router/productRouter")
 const mongoose=require('mongoose')
-const product=require("./model/productModel")
+const product=require("./model/productmodel")
 dotenv.config();
 main()
 .then("db connected")
